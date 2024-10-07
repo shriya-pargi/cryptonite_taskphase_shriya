@@ -25,3 +25,26 @@ Correct!!!
 /challenge/run is an absolute path! Here is your flag:
 pwn.college{QiCfm8sQFHmXxtdmYYmUf29oOCM.dVDN1QDLxQDO0czW}
 ```
+
+### Position thy self
+In this challenge we get introduced to the `cd` - change directory command.
+There are many sub directories in the Linux system.
+For its argument we have to go through multiple directories providing its path.
+Here we are asked to run a program in a different directory which is yet unknown to us.
+
+```
+hacker@paths~position-thy-self:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/aarch64-linux-gnu/include/gnu directory.
+Please use the `cd` utility to change directory appropriately.
+```
+After switching directories, and running the challenge
+
+```
+hacker@paths~position-thy-self:~$ cd /usr/aarch64-linux-gnu/include/gnu
+hacker@paths~position-thy-self:/usr/aarch64-linux-gnu/include/gnu$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+
+```
