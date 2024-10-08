@@ -1,4 +1,4 @@
-### Linux Luminarium
+# Linux Luminarium
 
 ## Module2: Pondering Paths
 
