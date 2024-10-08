@@ -65,7 +65,7 @@ Here is your flag:
 pwn.college{oirxO85mR-SU0nfq1vI-5WgK5K6.ddDN1QDLxQDO0czW}
 ```
 
-### Position yet elsewhere
+### 5. Position yet elsewhere
 Similar to the previous challenge
 
 ```
@@ -82,7 +82,7 @@ pwn.college{MNPMXidvMcmTemljumtBaWkF3xR.dhDN1QDLxQDO0czW}
 hacker@paths~position-yet-elsewhere:/proc/67$
 ```
 
-### 5. implicit relative paths, from /
+### 6. implicit relative paths, from /
 In this challenge we follow a relative path that is relative to our current working directory `cwd`  
 Now with reference to `/`  we `run` the program  
 The main difference between a reltive path and absolute path is that relative paths never start with `/`  
@@ -96,7 +96,7 @@ Here is your flag:
 pwn.college{o_9Tro9l9m9aBQnxFGoivLv9VPR.dlDN1QDLxQDO0czW}
 ```
 
-### 6. explicit relative paths, from /
+### 7. explicit relative paths, from /
 In this challenge we start by following a relative path using `/`  
 
 ```
@@ -115,7 +115,7 @@ Here is your flag:
 pwn.college{gikyDMDGJjAz6txwNV4gx--cbY7.dBTN1QDLxQDO0czW}
 ```
 
-### 7. implicit relative path
+### 8. implicit relative path
 In this challenge we learn the significance and use of `.`    
 For safety reasons, we don't use the `run` command beacuse it gives us a `command not found` error  
 So, instead we use `.`
@@ -129,4 +129,18 @@ Here is your flag:
 pwn.college{M_tVwFq8lbrzmaDLvDSy_u7IzUk.dFTN1QDLxQDO0czW}
 ```
 
-### 8. 
+### 9. home sweet home
+The prompt `~` is a shorthand for `/home/hacker`   
+The expansion of `~` is an absolute path  
+For example: ~/~ will be expanded to /home/hacker/~ rather than `/home/hacker/home/hacker`
+The file path should point to the home directory  
+This should not be more than 3 characters  
+Taking the file name as `a` , so the absolute path would be `/a`  
+
+```
+hacker@paths~home-sweet-home:~$ /challenge/run ~/a
+Writing the file to /home/hacker/a!
+... and reading it back to you:
+pwn.college{0c7hAdMpCnoBBgGg3TJq4Py6zb_.dNzM4QDLxQDO0czW}
+```
+
