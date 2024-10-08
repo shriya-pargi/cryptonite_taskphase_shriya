@@ -2,7 +2,7 @@
 
 ## Module2: Pondering Paths
 
-### The Root 
+### 1. The Root 
 In this challenge we need to invoke a program by providing its path on the command line.  
 The absolute path starts with `/` and is followed by a program  
 In this case the absolute path that starts at the root directory is `/pwn`  
@@ -15,7 +15,7 @@ Here is your flag:
 pwn.college{AIFIzQ0mC6SiZFlgidpxPuSk5lL.dhzN5QDLxQDO0czW}
 ```
 
-### Program and Absolute paths
+### 2. Program and Absolute paths
 In this challenge we need to invoke the `run` program that is the `challenge` directory, in turn in the root directory(`/`)  
 The absolute path in this case would be `/challenge/run`  
 
@@ -26,7 +26,7 @@ Correct!!!
 pwn.college{QiCfm8sQFHmXxtdmYYmUf29oOCM.dVDN1QDLxQDO0czW}
 ```
 
-### Position thy self
+### 3. Position thy self
 In this challenge we get introduced to the `cd` - change directory command.
 There are many sub directories in the Linux system.
 For its argument we have to go through multiple directories providing its path.
@@ -49,7 +49,7 @@ Here is your flag:
 pwn.college{kHWGdEJCXmJiw8mgIQGB-G2dE5H.dZDN1QDLxQDO0czW}
 ```
 
-### Position elsewhere
+### 4. Position elsewhere
 Similar to the previous challenge 
 
 ```
@@ -82,7 +82,7 @@ pwn.college{MNPMXidvMcmTemljumtBaWkF3xR.dhDN1QDLxQDO0czW}
 hacker@paths~position-yet-elsewhere:/proc/67$
 ```
 
-### implicit relative paths, from /
+### 5. implicit relative paths, from /
 In this challenge we follow a relative path that is relative to our current working directory `cwd`  
 Now with reference to `/`  we `run` the program  
 The main difference between a reltive path and absolute path is that relative paths never start with `/`  
@@ -96,4 +96,4 @@ Here is your flag:
 pwn.college{o_9Tro9l9m9aBQnxFGoivLv9VPR.dlDN1QDLxQDO0czW}
 ```
 
-### explicit relative paths, from /
+### 6. explicit relative paths, from /
