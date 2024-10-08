@@ -46,5 +46,38 @@ hacker@paths~position-thy-self:/usr/aarch64-linux-gnu/include/gnu$ /challenge/ru
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
 Here is your flag:
+pwn.college{kHWGdEJCXmJiw8mgIQGB-G2dE5H.dZDN1QDLxQDO0czW}
+```
 
+### Position elsewhere
+Similar to the previous challenge 
+
+```
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /var/log directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:/usr/bin$ cd /var/log
+hacker@paths~position-elsewhere:/var/log$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{oirxO85mR-SU0nfq1vI-5WgK5K6.ddDN1QDLxQDO0czW}
+```
+
+### Position yet elsewhere
+Similar to the previous challenge
+
+```
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /proc/67 directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-yet-elsewhere:~$ cd /proc/67
+hacker@paths~position-yet-elsewhere:/proc/67$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{MNPMXidvMcmTemljumtBaWkF3xR.dhDN1QDLxQDO0czW}
+hacker@paths~position-yet-elsewhere:/proc/67$
 ```
