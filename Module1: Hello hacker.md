@@ -2,7 +2,7 @@
 
 ## Module1: Hello Hackers  
 
-### Intro to Commands:  
+### 1. Intro to Commands:  
  When we open the terminal, `hacker@dojo:~$` is the prompt for the user to enter a command.
 
 1. ``whoami`` command is the first one we come across
@@ -18,7 +18,7 @@ pwn.college{sxi0lPxEFV411yRHFUplEal452s.ddjNyUDLxQDO0czW}
 ```
 
 
-### Intro to Arguments:
+### 2. Intro to Arguments:
 
 1. ``echo`` command echoes all its commands into the terminal.
 
