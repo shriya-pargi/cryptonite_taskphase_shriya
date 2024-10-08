@@ -83,4 +83,19 @@ hacker@paths~position-yet-elsewhere:/proc/67$
 ```
 
 ### implicit relative paths, from /
+In this challenge we follow a relative path that is relative to our current working directory `cwd`  
+Now with reference to `/`  we `run` the program  
+The main difference between a reltive path and absolute path is that relative paths never start with `/`  
+
+```
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+Correct!!!
+challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{o_9Tro9l9m9aBQnxFGoivLv9VPR.dlDN1QDLxQDO0czW}
+```
+
+
+
 In this challenge we learn about rrelative paths relative to the current working directory `cwd` 
