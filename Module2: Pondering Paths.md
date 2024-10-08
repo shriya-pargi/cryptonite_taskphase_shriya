@@ -97,3 +97,36 @@ pwn.college{o_9Tro9l9m9aBQnxFGoivLv9VPR.dlDN1QDLxQDO0czW}
 ```
 
 ### 6. explicit relative paths, from /
+In this challenge we start by following a relative path using `/`  
+
+```
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ challenge/run
+Incorrect...
+This challenge must be called with a relative path that explicitly starts with a `.`!
+```
+Here we are asked to follow a relative path that starts with `.`
+
+```
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{gikyDMDGJjAz6txwNV4gx--cbY7.dBTN1QDLxQDO0czW}
+```
+
+### 7. implicit relative path
+In this challenge we learn the significance and use of `.`    
+For safety reasons, we don't use the `run` command beacuse it gives us a `command not found` error  
+So, instead we use `.`
+
+```
+hacker@paths~implicit-relative-path:~$ cd /challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{M_tVwFq8lbrzmaDLvDSy_u7IzUk.dFTN1QDLxQDO0czW}
+```
+
+### 8. 
