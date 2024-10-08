@@ -81,3 +81,6 @@ Here is your flag:
 pwn.college{MNPMXidvMcmTemljumtBaWkF3xR.dhDN1QDLxQDO0czW}
 hacker@paths~position-yet-elsewhere:/proc/67$
 ```
+
+### implicit relative paths, from /
+In this challenge we learn about rrelative paths relative to the current working directory `cwd` 
